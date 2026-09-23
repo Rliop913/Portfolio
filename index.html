@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jiho Kim — C++ systems engineer working across real-time audio, DSP, GPGPU, and haptics/XR." />
+    <meta name="theme-color" content="#080b0f" />
+    <title>Jiho Kim — C++ Systems · Audio DSP · GPGPU · Haptics/XR</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Jiho Kim, home">JK<span>/</span>SYS</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#profile">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-link" href="https://github.com/Rliop913" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> C++ systems engineer · Seoul, KR</p>
+          <h1 id="hero-title">Real-time systems,<br />from <span>signal</span> to experience.</h1>
+          <p class="hero-intro">I build cross-platform software that connects signal-processing algorithms, GPU compute, sensors, and interactive hardware.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <span class="button button-disabled" aria-disabled="true" title="Resume file will be connected in the next content pass">Resume — pending</span>
+          </div>
+        </div>
+
+        <div class="signal-console" aria-label="Decorative real-time signal visualization">
+          <div class="console-head">
+            <span>LIVE / SIGNAL CHAIN</span>
+            <span>1.0 kHz</span>
+          </div>
+          <canvas id="signal-canvas" aria-hidden="true"></canvas>
+          <div class="console-pipeline" aria-hidden="true">
+            <span>ACQUIRE</span><i></i><span>MODEL</span><i></i><span>RENDER</span>
+          </div>
+          <dl class="console-stats">
+            <div><dt>DOMAIN</dt><dd>Audio / Haptics</dd></div>
+            <div><dt>RUNTIME</dt><dd>C++ / GPU</dd></div>
+            <div><dt>TARGET</dt><dd>Desktop / XR</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">01 — 07</div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 / Selected work</p>
+          <h2 id="work-title">Systems built across<br />software and hardware.</h2>
+          <p>Three areas that best represent my work. Detailed case studies will expand as source material is added.</p>
+        </div>
+
+        <article class="project project-featured">
+          <div class="project-number">01</div>
+          <div class="project-copy">
+            <p class="project-type">SYSTEMS · AUDIO</p>
+            <h3>Cross-platform<br />Audio Middleware</h3>
+            <p class="project-summary">A real-time C++ audio runtime spanning DSP, GPU acceleration, engine integration, and multi-platform delivery.</p>
+            <dl class="project-meta">
+              <div><dt>FOCUS</dt><dd>Architecture · DSP · GPGPU · CI/CD</dd></div>
+              <div><dt>STACK</dt><dd>C++20 · CUDA · OpenCL · OCCA</dd></div>
+              <div><dt>PLATFORMS</dt><dd>Windows · Linux · macOS</dd></div>
+            </dl>
+            <span class="case-status">Case study awaiting verified repository material</span>
+          </div>
+          <div class="architecture architecture-audio" aria-label="Audio middleware architecture diagram">
+            <div class="arch-label">SYSTEM MAP</div>
+            <div class="arch-core">REAL-TIME<br /><strong>DSP CORE</strong><small>C++20</small></div>
+            <div class="arch-node n1">INPUT<br /><small>Audio buffers</small></div>
+            <div class="arch-node n2">GPU<br /><small>CUDA · OCL</small></div>
+            <div class="arch-node n3">ENGINE<br /><small>Godot</small></div>
+            <div class="arch-node n4">RELEASE<br /><small>Multi-platform</small></div>
+            <svg viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M120 105 C220 105 200 210 300 210" />
+              <path d="M480 105 C380 105 400 210 300 210" />
+              <path d="M120 330 C220 330 200 210 300 210" />
+              <path d="M480 330 C380 330 400 210 300 210" />
+            </svg>
+          </div>
+        </article>
+
+        <article class="project project-split">
+          <div class="project-number">02</div>
+          <div class="project-visual haptic-visual" aria-label="Haptic texture acquisition and rendering pipeline">
+            <div class="scan-grid" aria-hidden="true"></div>
+            <div class="pipeline-stack">
+              <div><span>01</span><strong>CAPTURE</strong><small>Acceleration + force</small></div>
+              <div><span>02</span><strong>MODEL</strong><small>AR / LSF</small></div>
+              <div><span>03</span><strong>INTERPOLATE</strong><small>Spatial + dynamic</small></div>
+              <div><span>04</span><strong>RENDER</strong><small>OpenXR haptic PCM</small></div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">RESEARCH SYSTEM · HAPTICS/XR</p>
+            <h3>AR Haptic Texture<br />Capture & Rendering</h3>
+            <p class="project-summary">A low-cost pipeline that captures physical texture signals and synthesizes interactive haptic feedback within a single mixed-reality session.</p>
+            <dl class="project-meta">
+              <div><dt>ROLE</dt><dd>Acquisition · Modeling · Sync · Rendering</dd></div>
+              <div><dt>STACK</dt><dd>C++ · ESP32 · Godot · OpenXR</dd></div>
+              <div><dt>OUTPUT</dt><dd>AsiaHaptics 2026 extended abstract</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project project-split project-reverse">
+          <div class="project-number">03</div>
+          <div class="project-copy">
+            <p class="project-type">COMPUTE · SIGNAL PROCESSING</p>
+            <h3>GPGPU<br />Signal Processing</h3>
+            <p class="project-summary">Real-time FFT/STFT processing across heterogeneous GPU backends, developed as a reusable systems component rather than a one-off experiment.</p>
+            <dl class="project-meta">
+              <div><dt>FOCUS</dt><dd>FFT · STFT · Spectral processing</dd></div>
+              <div><dt>BACKENDS</dt><dd>CUDA · OpenCL · OCCA</dd></div>
+              <div><dt>RESULTS</dt><dd>Benchmark data pending verification</dd></div>
+            </dl>
+          </div>
+          <div class="project-visual spectrum-visual" aria-label="Abstract spectrogram visualization">
+            <canvas id="spectrum-canvas" aria-hidden="true"></canvas>
+            <div class="spectrum-axis"><span>TIME</span><span>FREQUENCY</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section profile" id="profile" aria-labelledby="profile-title">
+        <div class="section-heading compact">
+          <p class="section-kicker">02 / Engineering profile</p>
+          <h2 id="profile-title">Algorithms become useful<br />when the whole system works.</h2>
+        </div>
+        <div class="profile-grid">
+          <p class="profile-statement">My work sits between low-level software and research prototyping: implementing DSP models, moving workloads onto GPUs, connecting sensors over constrained networks, and shipping the result into an interactive runtime.</p>
+          <div class="focus-list">
+            <div><span>01</span><strong>Real-time systems</strong><small>C++ · concurrency · networking</small></div>
+            <div><span>02</span><strong>Signal processing</strong><small>FFT · STFT · AR · LSF · filtering</small></div>
+            <div><span>03</span><strong>GPU computing</strong><small>CUDA · OpenCL · OCCA</small></div>
+            <div><span>04</span><strong>Interactive hardware</strong><small>OpenXR · Godot · ESP32 · sensors</small></div>
+          </div>
+        </div>
+        <div class="current-strip">
+          <span>CURRENT</span>
+          <strong>M.S. in Computer Engineering</strong>
+          <span>Kyung Hee University</span>
+        </div>
+      </section>
+
+      <section class="section research" id="research" aria-labelledby="research-title">
+        <div class="section-heading compact">
+          <p class="section-kicker">03 / Research & open source</p>
+          <h2 id="research-title">Evidence, not decoration.</h2>
+        </div>
+        <div class="research-list">
+          <article>
+            <time>2026</time>
+            <div><p>PUBLICATION / HAPTICS</p><h3>AR Haptic Texture Capture & Rendering</h3><span>AsiaHaptics 2026 · publication details pending release</span></div>
+            <span class="item-state">FORTHCOMING</span>
+          </article>
+          <article>
+            <time>—</time>
+            <div><p>PUBLICATION / AUDIO</p><h3>APJCRI Publication</h3><span>Full citation and paper link to be verified</span></div>
+            <span class="item-state">DETAILS PENDING</span>
+          </article>
+          <article>
+            <time>OSS</time>
+            <div><p>OPEN SOURCE / C++</p><h3>Meta C++ Bug Fix Contribution</h3><span>Merged contribution · pull request link to be added</span></div>
+            <span class="item-state">LINK PENDING</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack" aria-labelledby="stack-title">
+        <div class="section-heading compact">
+          <p class="section-kicker">04 / Technical stack</p>
+          <h2 id="stack-title">Tools organized by the<br />problems they solve.</h2>
+        </div>
+        <div class="stack-grid">
+          <div><span>SYSTEMS</span><p>C++20<br />Multithreading<br />Networking<br />IPC</p></div>
+          <div><span>SIGNAL</span><p>FFT / STFT<br />AR / LSF<br />Audio DSP<br />PSD / Filtering</p></div>
+          <div><span>ACCELERATION</span><p>CUDA<br />OpenCL<br />OCCA<br />GPU kernels</p></div>
+          <div><span>XR / ENGINE</span><p>OpenXR<br />Godot 4<br />GDExtension<br />Haptic PCM</p></div>
+          <div><span>EMBEDDED</span><p>ESP32 / S3<br />BLE / Wi-Fi<br />Sensor I/O<br />Clock sync</p></div>
+          <div><span>DELIVERY</span><p>CMake<br />CI/CD<br />Cross-platform builds<br />Binary releases</p></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="section-kicker">05 / Contact</p>
+        <h2 id="contact-title">Building something where<br /><span>software meets the physical world?</span></h2>
+        <div class="contact-row">
+          <p>Contact details will be connected from the verified resume in the next content pass.</p>
+          <a class="button button-primary" href="https://github.com/Rliop913" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span data-year></span> Jiho Kim</span>
+      <span>C++ Systems · Audio DSP · GPGPU · Haptics/XR</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
