@@ -6,6 +6,10 @@
     <meta name="description" content="Jiho Kim — C++ systems engineer and researcher working across real-time audio, DSP, GPGPU, and haptics/XR." />
     <meta name="theme-color" content="#f6f7f5" />
     <title>Jiho Kim — Systems Engineer · Curriculum Vitae & Selected Work</title>
+    <meta property="og:title" content="Jiho Kim — C++ Systems Engineer" />
+    <meta property="og:description" content="Selected systems across real-time audio, DSP, GPGPU, and haptics/XR." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f6f7f5'/%3E%3Cpath d='M6 6h5v14h8v5H6zM21 6h5v12h-5z' fill='%231c4fd7'/%3E%3C/svg%3E" />
   </head>
@@ -14,16 +18,26 @@
 
     <header class="document-head" id="top">
       <a class="doc-mark" href="#top" aria-label="Jiho Kim, top of page">JK—01</a>
-      <p>Curriculum vitae / selected engineering work</p>
-      <p>Updated 2026.09</p>
+      <nav aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
+        <a href="#work">Selected work</a>
+        <a href="#research">Evidence</a>
+      </nav>
+      <a class="head-contact" href="mailto:rrop@khu.ac.kr">Contact ↗</a>
     </header>
 
-    <main id="content">
+    <main id="content" tabindex="-1">
       <section class="identity" aria-labelledby="name">
         <div class="identity-main">
           <p class="overline">C++ systems engineer · researcher</p>
           <h1 id="name">Jiho Kim</h1>
           <p class="role-line">Real-time systems / Audio DSP / GPGPU / Haptics & XR</p>
+          <p class="hero-summary">I design and implement systems from signal acquisition and DSP kernels to GPU execution, networking, and interactive runtimes.</p>
+          <p class="hero-actions">
+            <a class="primary-action" href="#work">View selected work</a>
+            <a href="https://github.com/Rliop913" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://rliop913.github.io/Project-DJ-Engine-Docs/" target="_blank" rel="noreferrer">Technical documentation ↗</a>
+          </p>
         </div>
         <dl class="identity-data">
           <div><dt>Current</dt><dd>M.S. Researcher, Kyung Hee University Haptics Lab</dd></div>
@@ -33,55 +47,56 @@
         </dl>
       </section>
 
-      <section class="cv-grid" id="profile" aria-label="Curriculum vitae summary">
+
+      <section class="cv-grid" id="profile" aria-label="이력 및 기술 역량 요약">
         <div class="cv-column profile-column">
-          <h2><span>01A</span> Profile</h2>
-          <p class="lead">I build systems across the full path from signal-processing and GPU kernels to networking, sensors, and interactive runtimes.</p>
-          <p>My work combines low-level C++ implementation with research prototyping. Current research focuses on acquiring, modeling, and rendering haptic textures inside a standalone mixed-reality workflow.</p>
+          <h2><span>01A</span> 프로필</h2>
+          <p class="lead">신호 처리와 GPU 커널부터 네트워크, 센서, 인터랙티브 런타임까지 전체 경로를 아우르는 시스템을 만듭니다.</p>
+          <p>저수준 C++ 시스템 구현과 연구 프로토타이핑을 함께 수행합니다. 현재는 독립형 혼합현실 환경에서 햅틱 텍스처를 취득하고, 모델링하고, 재현하는 워크플로를 연구하고 있습니다.</p>
           <div class="subsection">
-            <h3>Education</h3>
+            <h3>학력</h3>
             <article class="compact-entry">
-              <time>2025—Present</time>
-              <strong>M.S. Computer Engineering</strong>
-              <p>Kyung Hee University</p>
+              <time>2025—현재</time>
+              <strong>컴퓨터공학 석사과정</strong>
+              <p>경희대학교</p>
             </article>
             <article class="compact-entry">
               <time>2021—2025</time>
-              <strong>B.S. Computer Engineering</strong>
-              <p>Hoseo University</p>
+              <strong>컴퓨터공학 학사</strong>
+              <p>호서대학교</p>
             </article>
           </div>
         </div>
 
         <div class="cv-column experience-column">
-          <h2><span>01B</span> Experience</h2>
+          <h2><span>01B</span> 경력</h2>
           <article class="cv-entry">
-            <time>2025—Present</time>
-            <div><p class="entry-kind">Research</p><h3>M.S. Researcher · Haptics / XR</h3><p>Kyung Hee University Haptics Lab</p><small>Meta Quest 3, OpenXR, 1 kHz sensing, AR/LSF modeling, vibrotactile PCM.</small></div>
+            <time>2025—현재</time>
+            <div><p class="entry-kind">연구</p><h3>석사 연구원 · Haptics / XR</h3><p>경희대학교 Haptics Lab</p><small>Meta Quest 3, OpenXR, 1 kHz 센싱, AR/LSF 모델링, 진동 촉각 PCM 렌더링</small></div>
           </article>
           <article class="cv-entry">
-            <time>2022—Present</time>
-            <div><p class="entry-kind">Independent / Open source</p><h3>Project DJ Engine · Solo Developer</h3><p>Cross-platform C++20 audio and rhythm-game middleware.</p><small>Architecture, DSP runtime, IPC, GPU integration, Godot GDExtension, CI/CD.</small></div>
-          </article>
-          <article class="cv-entry">
-            <time>2023—2024</time>
-            <div><p class="entry-kind">Research</p><h3>Undergraduate Researcher · CVLab</h3><p>Hoseo University</p><small>C++ computer-vision research prototypes and experimental software.</small></div>
+            <time>2022—현재</time>
+            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3>Project DJ Engine · 단독 개발</h3><p>크로스플랫폼 C++20 오디오·리듬 게임 미들웨어</p><small>아키텍처, DSP 런타임, IPC, GPU 통합, Godot GDExtension, CI/CD</small></div>
           </article>
           <article class="cv-entry">
             <time>2023—2024</time>
-            <div><p class="entry-kind">Independent / Open source</p><h3>OCCAstft · GPGPU / DSP Developer</h3><p>Heterogeneous short-time Fourier transform system.</p><small>OKL kernels, four runtimes, asynchronous IPC, H100 profiling.</small></div>
+            <div><p class="entry-kind">연구</p><h3>학부 연구원 · CVLab</h3><p>호서대학교</p><small>C++ 컴퓨터 비전 연구 프로토타입 및 실험용 소프트웨어 개발</small></div>
+          </article>
+          <article class="cv-entry">
+            <time>2023—2024</time>
+            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3>OCCAstft · GPGPU / DSP 개발</h3><p>이기종 실행 환경을 지원하는 단시간 푸리에 변환 시스템</p><small>OKL 커널, 네 가지 실행 환경, 비동기 IPC, NVIDIA H100 프로파일링</small></div>
           </article>
         </div>
 
         <aside class="cv-column capability-column">
-          <h2><span>01C</span> Capabilities</h2>
+          <h2><span>01C</span> 기술 역량</h2>
           <dl class="capability-list">
-            <div><dt>Systems</dt><dd>C++20, multithreading, real-time design, Windows, Linux, macOS</dd></div>
-            <div><dt>Signal</dt><dd>FFT, STFT, AR, LSF, filtering, real-time PCM synthesis</dd></div>
-            <div><dt>Compute</dt><dd>CUDA, OpenCL, OCCA / OKL, OpenMP, heterogeneous runtimes</dd></div>
-            <div><dt>XR / Haptics</dt><dd>OpenXR, Meta Quest 3, Touch Plus, Godot 4, GDExtension</dd></div>
-            <div><dt>Data / IPC</dt><dd>Cap’n Proto, CBOR, SQLite, TCP, UDP, WebSocket, shared memory</dd></div>
-            <div><dt>Delivery</dt><dd>CMake, Conan, CI/CD, prebuilt cross-platform packages</dd></div>
+            <div><dt>시스템</dt><dd>C++20, 멀티스레딩, 실시간 시스템 설계, Windows, Linux, macOS</dd></div>
+            <div><dt>신호 처리</dt><dd>FFT, STFT, AR, LSF, 필터링, 실시간 PCM 합성</dd></div>
+            <div><dt>병렬 연산</dt><dd>CUDA, OpenCL, OCCA / OKL, OpenMP, 이기종 실행 환경</dd></div>
+            <div><dt>XR / 햅틱</dt><dd>OpenXR, Meta Quest 3, Touch Plus, Godot 4, GDExtension</dd></div>
+            <div><dt>데이터 / IPC</dt><dd>Cap’n Proto, CBOR, SQLite, TCP, UDP, WebSocket, 공유 메모리</dd></div>
+            <div><dt>빌드 / 배포</dt><dd>CMake, Conan, CI/CD, 크로스플랫폼 사전 빌드 패키지</dd></div>
           </dl>
         </aside>
       </section>
@@ -100,30 +115,35 @@
         <article class="record" id="pdje">
           <header class="record-head">
             <p class="record-no">02.1</p>
-            <div><p class="record-domain">Systems / Audio / Middleware</p><h3>Project DJ Engine</h3></div>
-            <dl><div><dt>Role</dt><dd>Solo developer</dd></div><div><dt>Period</dt><dd>Jun 2022—Present</dd></div><div><dt>Delivery</dt><dd>Windows / Linux / macOS</dd></div></dl>
+            <div><p class="record-domain">시스템 / 오디오 / 미들웨어</p><h3>Project DJ Engine</h3></div>
+            <dl><div><dt>역할</dt><dd>단독 개발</dd></div><div><dt>기간</dt><dd>2022년 6월—현재</dd></div><div><dt>지원 환경</dt><dd>Windows / Linux / macOS</dd></div></dl>
           </header>
           <div class="record-body">
             <div class="record-summary">
-              <p>A soft real-time C++20 engine for rhythm games, DJ performance, and audio-production workflows, delivered to Godot through a dedicated GDExtension wrapper.</p>
+              <p>리듬 게임, DJ 퍼포먼스, DAW형 음악 도구를 만드는 Godot 개발자를 위한 오픈소스 툴킷입니다.</p>
+              <dl class="story-grid">
+                <div><dt>만든 이유</dt><dd>리듬 게임 개발자는 오디오 재생, 저지연 입력, 노트 판정, 저작 도구, 음악 분석 기능을 직접 조합하고 동기화해야 합니다. PDJE는 이 기반을 하나의 재사용 가능한 Godot 시스템으로 제공합니다.</dd></div>
+                <div><dt>직접 구현한 범위</dt><dd>전체 아키텍처부터 재생·편집 런타임, DSP 통합, 장치 입력, 리듬 게임 판정, IPC, 데이터 저장, 패키징, 자동 배포까지 설계하고 구현했습니다.</dd></div>
+                <div><dt>만들 수 있는 것</dt><dd>동기화된 리듬 게임, 실시간 또는 사전 제작된 DJ 퍼포먼스, 게임 내 차트·믹스 편집기, 저지연 입력 시스템, 음악 검색과 파형 분석 도구를 개발할 수 있습니다.</dd></div>
+              </dl>
               <ul class="evidence">
-                <li><b>Scope</b><span>Architecture, playback, input, judging, DSP, IPC, persistence, packaging</span></li>
-                <li><b>Runtime</b><span>C++20, miniaudio, Faust, Cap’n Proto, SQLite</span></li>
-                <li><b>Distribution</b><span>Core, wrapper, and prebuilt release repositories</span></li>
+                <li><b>구조</b><span>네이티브 C++ 코어와 Godot용 GDExtension 인터페이스를 분리</span></li>
+                <li><b>런타임</b><span>C++20, miniaudio, Faust, Cap’n Proto, SQLite</span></li>
+                <li><b>배포</b><span>자동화 워크플로 10개 · 래퍼 구성 6개 · 관리 라이브러리 21개</span></li>
               </ul>
-              <p class="record-links"><a href="https://rliop913.github.io/Project-DJ-Engine-Docs/" target="_blank" rel="noreferrer">Documentation ↗</a><a href="https://github.com/Rliop913/Project-DJ-Engine" target="_blank" rel="noreferrer">Core ↗</a><a href="https://github.com/Rliop913/PDJE-Godot-Plugin" target="_blank" rel="noreferrer">Wrapper ↗</a><a href="https://github.com/Rliop913/Project_DJ_Godot" target="_blank" rel="noreferrer">Prebuilt ↗</a></p>
+              <p class="record-links"><a href="https://rliop913.github.io/Project-DJ-Engine-Docs/" target="_blank" rel="noreferrer">기술 문서 ↗</a><a href="https://github.com/Rliop913/Project-DJ-Engine" target="_blank" rel="noreferrer">코어 ↗</a><a href="https://github.com/Rliop913/PDJE-Godot-Plugin" target="_blank" rel="noreferrer">Godot 래퍼 ↗</a><a href="https://github.com/Rliop913/Project_DJ_Godot" target="_blank" rel="noreferrer">사전 빌드 ↗</a></p>
             </div>
-            <div class="technical-sheet" aria-label="Project DJ Engine architecture record">
-              <p class="sheet-title">Architecture record / documentation verified</p>
-              <div class="sheet-row sheet-surface"><b>Application surface</b><strong>PDJE-Godot-Plugin</strong><span>GDExtension nodes, RefCounted values, signals</span></div>
+            <div class="technical-sheet" role="region" aria-label="Project DJ Engine architecture record">
+              <p class="sheet-title">아키텍처 기록 / 소스 연결</p>
+              <div class="sheet-row sheet-surface"><b>애플리케이션 인터페이스</b><strong>PDJE-Godot-Plugin</strong><span>GDExtension 노드, RefCounted 값 객체, 시그널</span></div>
               <div class="sheet-grid">
-                <div><b>Core</b><strong>Playback + Editor</strong><span>Root DB, search, player, music/FX control, Git-backed authoring</span></div>
-                <div><b>Input</b><strong>Device Capture</strong><span>Keyboard, mouse, MIDI, Windows/Linux backends</span></div>
-                <div><b>Judge</b><strong>Timing + Rails</strong><span>Chart notes, input mapping, use/miss windows, queued signals</span></div>
-                <div><b>Util</b><strong>Data + Analysis</strong><span>RocksDB, SQLite, Annoy, fuzzy search, STFT, waveform, ONNX</span></div>
+                <div><b>코어</b><strong>재생 + 편집</strong><span>루트 DB, 검색, 플레이어, 음악·FX 제어, Git 기반 저작</span></div>
+                <div><b>입력</b><strong>장치 입력</strong><span>키보드, 마우스, MIDI, Windows·Linux 백엔드</span></div>
+                <div><b>판정</b><strong>타이밍 + 레일</strong><span>차트 노트, 입력 매핑, 성공·실패 판정 구간, 이벤트 큐</span></div>
+                <div><b>유틸리티</b><strong>데이터 + 분석</strong><span>RocksDB, SQLite, Annoy, 퍼지 검색, STFT, 파형, ONNX</span></div>
               </div>
-              <div class="sheet-row"><b>Live data</b><strong>Core timing + Input events → Judge</strong><span>Shared monotonic high-resolution timebase; reacquire after producer reset</span></div>
-              <div class="sheet-foot"><span>Native engine</span><strong>C++20 / CMake / Conan</strong><span>Soft real-time</span></div>
+              <div class="sheet-row"><b>실시간 데이터</b><strong>코어 타이밍 + 입력 이벤트 → 판정</strong><span>공유 단조 고해상도 시간축 사용, 생산자 재시작 후 기준 시간 재동기화</span></div>
+              <div class="sheet-foot"><span>네이티브 엔진</span><strong>C++20 / CMake / Conan</strong><span>소프트 리얼타임</span></div>
             </div>
           </div>
         </article>
@@ -131,26 +151,31 @@
         <article class="record" id="haptics">
           <header class="record-head">
             <p class="record-no">02.2</p>
-            <div><p class="record-domain">Research system / Haptics / XR</p><h3>End-to-End MR Haptic Texture Workflow</h3></div>
-            <dl><div><dt>Role</dt><dd>M.S. Researcher</dd></div><div><dt>Period</dt><dd>Mar 2025—Present</dd></div><div><dt>Venue</dt><dd>AsiaHaptics 2026</dd></div></dl>
+            <div><p class="record-domain">연구 시스템 / 햅틱 / XR</p><h3>End-to-End MR Haptic Texture Workflow</h3></div>
+            <dl><div><dt>역할</dt><dd>석사 연구원</dd></div><div><dt>기간</dt><dd>2025년 3월—현재</dd></div><div><dt>발표</dt><dd>AsiaHaptics 2026</dd></div></dl>
           </header>
           <div class="record-body">
             <div class="record-summary">
-              <p>A standalone Meta Quest workflow that performs sensing, online AR model generation, analysis, and vibrotactile rendering inside one mixed-reality session.</p>
+              <p>하나의 혼합현실 세션 안에서 햅틱 텍스처를 취득하고, 모델링하고, 분석하고, 재현하는 독립형 Meta Quest 워크플로입니다.</p>
+              <dl class="story-grid">
+                <div><dt>해결하려는 문제</dt><dd>무선 센서와 헤드셋 런타임 사이에서 텍스처 취득, 온라인 모델 생성, 분석, 진동 촉각 재생이 하나의 일관된 흐름으로 동작해야 합니다.</dd></div>
+                <div><dt>구현</dt><dd>ESP32 시계 정렬, 네이티브 C/C++ 모델링, 공간 보간, Godot 통합, OpenXR 부동소수점 PCM을 하나의 연구 시스템으로 결합했습니다.</dd></div>
+                <div><dt>공개 근거 범위</dt><dd>AsiaHaptics 2026 시연을 목표로 개발 중인 프로토타입이며, 공식 공개 저장소와 출판 페이지는 아직 제공되지 않습니다.</dd></div>
+              </dl>
               <ul class="evidence">
-                <li><b>Prototype</b><span>$26.27 sensor attachment; MPU6050 + QA6P FSR + ESP32</span></li>
-                <li><b>Acquisition</b><span>1 kHz acceleration and force; clock-offset alignment over Wi-Fi</span></li>
-                <li><b>Runtime</b><span>Godot 4, C/C++ GDExtension, OpenXR floating-point PCM</span></li>
+                <li><b>프로토타입</b><span>$26.27 센서 부착물 · MPU6050 + QA6P FSR + ESP32</span></li>
+                <li><b>데이터 취득</b><span>1 kHz 가속도·힘 측정 · Wi-Fi 환경에서 PTP 방식에 착안한 시계 오프셋 정렬</span></li>
+                <li><b>런타임</b><span>Godot 4 · 네이티브 C/C++ GDExtension · OpenXR 부동소수점 PCM</span></li>
               </ul>
             </div>
-            <div class="method-sheet" aria-label="Haptic texture workflow stages">
-              <p class="sheet-title">Method record / one mixed-reality session</p>
+            <div class="method-sheet" role="region" aria-label="햅틱 텍스처 처리 단계">
+              <p class="sheet-title">처리 과정 / 하나의 혼합현실 세션</p>
               <ol>
-                <li><span>01</span><div><b>Capture</b><p>Acceleration + force · 1 kHz</p></div></li>
-                <li><span>02</span><div><b>Segment</b><p>Bottom-up time-series segmentation</p></div></li>
-                <li><span>03</span><div><b>Model</b><p>Autoregression → line spectral frequencies</p></div></li>
-                <li><span>04</span><div><b>Interpolate</b><p>Delaunay triangulation + barycentric coordinates</p></div></li>
-                <li><span>05</span><div><b>Render</b><p>OpenXR haptic PCM on Touch Plus</p></div></li>
+                <li><span>01</span><div><b>취득</b><p>가속도 + 힘 · 1 kHz</p></div></li>
+                <li><span>02</span><div><b>분할</b><p>상향식 시계열 분할</p></div></li>
+                <li><span>03</span><div><b>모델링</b><p>자기회귀 모델 → 선 스펙트럼 주파수</p></div></li>
+                <li><span>04</span><div><b>보간</b><p>Delaunay 삼각분할 + 무게중심 좌표</p></div></li>
+                <li><span>05</span><div><b>재현</b><p>Touch Plus에서 OpenXR 햅틱 PCM 출력</p></div></li>
               </ol>
             </div>
           </div>
@@ -159,29 +184,33 @@
         <article class="record" id="occastft">
           <header class="record-head">
             <p class="record-no">02.3</p>
-            <div><p class="record-domain">Compute / Signal processing</p><h3>OCCAstft</h3></div>
-            <dl><div><dt>Role</dt><dd>GPGPU / DSP developer</dd></div><div><dt>Period</dt><dd>2023—2024</dd></div><div><dt>Profile host</dt><dd>NVIDIA H100</dd></div></dl>
+            <div><p class="record-domain">병렬 연산 / 신호 처리</p><h3>OCCAstft</h3></div>
+            <dl><div><dt>역할</dt><dd>GPGPU / DSP 개발</dd></div><div><dt>기간</dt><dd>2023—2024</dd></div><div><dt>프로파일링 환경</dt><dd>NVIDIA H100</dd></div></dl>
           </header>
           <div class="record-body">
             <div class="record-summary">
-              <p>An open-source heterogeneous STFT system for large signal batches. A common processing contract spans GPU and CPU runners while a standalone proxy selects an available runtime.</p>
+              <p>GPU와 CPU 실행 환경, 비동기 프록시 전송을 하나의 처리 규약으로 연결하는 오픈소스 이기종 STFT 시스템입니다.</p>
+              <dl class="story-grid">
+                <div><dt>해결하려는 문제</dt><dd>대용량 신호를 처리하는 호출 코드가 특정 GPU API, CPU 백엔드, 전송 방식에 종속되지 않으면서도 여러 실행 환경을 사용할 수 있어야 합니다.</dd></div>
+                <div><dt>설계 결정</dt><dd>공통 요청 규약이 CUDA, OpenCL, OpenMP, 서버, Serial 실행 환경을 선택하고, OKL 커널이 Stockham FFT 파이프라인을 구현하도록 구성했습니다.</dd></div>
+                <div><dt>공개 근거 범위</dt><dd>H100에서 15개 윈도 크기를 측정한 원본 JSON, 통합 CSV 생성 과정, 크기별 프로파일링 결과를 저장소에 보존하고 있습니다. 검토된 결과표가 준비되기 전까지 비교 성능 향상 수치는 제시하지 않습니다.</dd></div>
+              </dl>
               <ul class="evidence">
-                <li><b>Execution</b><span>CUDA, OpenCL, OpenMP, Serial; runtime fallback</span></li>
-                <li><b>Pipeline</b><span>Overlap → window/DC removal → Stockham FFT → power or packed half-complex output</span></li>
-                <li><b>Transport</b><span>IXWebSocket, Cap’n Proto, Windows/POSIX shared memory</span></li>
-                <li><b>Evidence</b><span>15 power-of-two sizes, 2⁶—2²⁰; OCCA/cuFFT/clFFT comparison artifacts</span></li>
+                <li><b>실행 환경</b><span>CUDA → OpenCL → OpenMP → 서버 → Serial 순서의 대체 실행</span></li>
+                <li><b>처리 과정</b><span>오버랩 → 윈도 적용·DC 제거 → Stockham FFT → 파워 또는 packed half-complex 출력</span></li>
+                <li><b>프로파일링</b><span>2의 거듭제곱 크기 15개, 2⁶—2²⁰ · NVIDIA H100 · Ubuntu · CUDA 12.3</span></li>
               </ul>
-              <p class="record-links"><a href="https://github.com/Rliop913/OCCAstft" target="_blank" rel="noreferrer">Repository ↗</a><a href="http://apjcriweb.org/content/vol11no2/40.html" target="_blank" rel="noreferrer">Related paper ↗</a></p>
+              <p class="record-links"><a href="https://github.com/Rliop913/OCCAstft" target="_blank" rel="noreferrer">저장소 ↗</a><a href="http://apjcriweb.org/content/vol11no2/40.html" target="_blank" rel="noreferrer">관련 논문 ↗</a></p>
             </div>
-            <div class="technical-sheet compact-sheet" aria-label="OCCAstft implementation record">
-              <p class="sheet-title">Implementation record / source verified</p>
+            <div class="technical-sheet compact-sheet" role="region" aria-label="OCCAstft 구현 기록">
+              <p class="sheet-title">구현 기록 / 소스 연결</p>
               <div class="sheet-grid">
-                <div><b>Request</b><strong>STFTProxy</strong><span>RequestSTFT · asynchronous future result</span></div>
-                <div><b>Transport</b><strong>IPC + Network</strong><span>Cap’n Proto · WebSocket · shared memory</span></div>
-                <div><b>Execution</b><strong>Runtime Fallback</strong><span>CUDA → OpenCL → OpenMP → server → Serial</span></div>
-                <div><b>Kernel</b><strong>OKL · Stockham</strong><span>Eight windows · overlap · DC removal · two output modes</span></div>
+                <div><b>요청</b><strong>STFTProxy</strong><span>RequestSTFT · 비동기 future 결과</span></div>
+                <div><b>전송</b><strong>IPC + 네트워크</strong><span>Cap’n Proto · WebSocket · 공유 메모리</span></div>
+                <div><b>실행</b><strong>런타임 대체 실행</strong><span>CUDA → OpenCL → OpenMP → 서버 → Serial</span></div>
+                <div><b>커널</b><strong>OKL · Stockham</strong><span>윈도 함수 8종 · 오버랩 · DC 제거 · 출력 모드 2종</span></div>
               </div>
-              <p class="sheet-note">HIP and Metal remain scaffolded, not implemented.</p>
+              <p class="sheet-note">HIP과 Metal은 구조만 마련되어 있으며 실제 구현은 완료되지 않았습니다.</p>
             </div>
           </div>
         </article>
@@ -191,8 +220,9 @@
         <header><p>03 / Research & contributions</p><h2 id="research-heading">Evidence</h2></header>
         <div class="credential-list">
           <article><time>2026</time><p>Publication / Haptics</p><h3>An End-to-End MR Workflow for Haptic Texture Acquisition, Modeling, and Rendering</h3><span>Jiho Kim, Mudassir Ibrahim Awan, Ahsan Raza, and SeokHee Jeon · AsiaHaptics 2026 · forthcoming</span></article>
-          <article><time>Published</time><p>Publication / GPGPU DSP</p><h3>Related OCCAstft Research</h3><span>Asia-pacific Journal of Convergent Research Interchange · linked from the project repository</span></article>
-          <article><time>Merged</time><p>Open source / C++</p><h3>Meta C++ Bug Fix Contribution</h3><span>Upstream contribution · pull-request link pending</span></article>
+          <article><time>Published</time><p>Publication / GPGPU DSP</p><h3><a href="http://apjcriweb.org/content/vol11no2/40.html" target="_blank" rel="noreferrer">Related OCCAstft Research ↗</a></h3><span>Asia-Pacific Journal of Convergent Research Interchange · linked from the project record</span></article>
+          <article><time>Merged</time><p>Open source / C++</p><h3><a href="https://github.com/facebook/rocksdb/commit/6ae1cb8837022ef84f3993633791a4a54b18393d" target="_blank" rel="noreferrer">RocksDB C++20 atomic shared-pointer compatibility ↗</a></h3><span>Upstream commit 6ae1cb8 · original pull request #13744</span></article>
+          <article><time>Merged</time><p>Open source / Integration</p><h3><a href="https://github.com/hi-godot/godot-ai/pull/870" target="_blank" rel="noreferrer">Godot AI · Pi Coding Agent client ↗</a></h3><span>19 files · 2,126 additions · configuration, rollback protection, documentation, and regression tests</span></article>
         </div>
       </section>
     </main>
@@ -200,7 +230,7 @@
     <footer id="contact">
       <p>Jiho Kim · C++ Systems Engineer</p>
       <p><a href="mailto:rrop@khu.ac.kr">rrop@khu.ac.kr</a> · <a href="https://github.com/Rliop913" target="_blank" rel="noreferrer">GitHub ↗</a></p>
-      <p>CV / Selected work · 2026</p>
+      <p>Selected systems · engineering records</p>
     </footer>
   </body>
 </html>
