@@ -2,20 +2,31 @@
 
 Technical portfolio for C++ systems, audio DSP, GPGPU, and haptics/XR work.
 
-## Stage 5 status
+This branch preserves two design directions:
 
-The first design and layout prototype is implemented as a dependency-free static site. Unverified links, metrics, citations, and media are intentionally marked as pending instead of being inferred.
+- The repository root contains the editorial, CV-style static prototype.
+- `sphinx/` contains the documentation-first portfolio, including its source
+  files and generated local-preview HTML.
 
-## Local preview
+Project DJ Engine is the lead engineering system in the Sphinx version. Its
+page combines a non-specialist-readable introduction with repository-derived
+scale, architecture, build, test, and integration evidence.
 
-Serve the repository root with any static HTTP server, for example:
+## Root prototype
 
 ```bash
-python -m http.server 4173
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:4173`.
+## Sphinx prototype
 
-## Deployment
+```bash
+cd sphinx
+uv sync
+./build.sh
+python -m http.server 8000 --directory docs
+```
 
-`.github/workflows/deploy-pages.yml` deploys the repository root to GitHub Pages after pushes to `main`. In the repository settings, choose **GitHub Actions** as the Pages source.
+No deployment is performed from this development branch. The existing Pages
+workflow remains restricted to pushes to `main`.
