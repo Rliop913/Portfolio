@@ -42,11 +42,3 @@ device, applies a configurable microsecond debounce threshold, and can
 reconnect automatically when a Bluetooth keyboard reappears through udev.
 
 - `Repository <https://github.com/Rliop913/Linux-Key-Debouncer>`_
-
-Scope Boundary
---------------
-
-Experimental language exercises, early demonstrations, and unrelated personal
-automation are not presented as portfolio projects. Private laboratory and
-assistive-control repositories remain excluded until their publication and
-collaboration boundaries are explicitly cleared.

@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jiho Kim — C++ systems engineer and researcher working across real-time audio, DSP, GPGPU, and haptics/XR." />
+    <meta name="description" content="Jiho Kim — C++ systems engineer and researcher working across AI backends, Unity interactions, real-time audio, DSP, GPGPU, and haptics/XR." />
     <meta name="theme-color" content="#f6f7f5" />
     <title>Jiho Kim — Systems Engineer · Curriculum Vitae & Selected Work</title>
     <meta property="og:title" content="Jiho Kim — C++ Systems Engineer" />
-    <meta property="og:description" content="Selected systems across real-time audio, DSP, GPGPU, and haptics/XR." />
+    <meta property="og:description" content="Selected work across AI backends, Unity interactions, real-time systems, and haptics/XR." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
     <link rel="canonical" href="https://rliop913.github.io/Portfolio/" />
@@ -36,8 +36,8 @@
         <div class="identity-main">
           <p class="overline">C++ systems engineer · researcher</p>
           <h1 id="name">Jiho Kim</h1>
-          <p class="role-line">Real-time systems / Audio DSP / GPGPU / Haptics & XR</p>
-          <p class="hero-summary">I design and implement systems from signal acquisition and DSP kernels to GPU execution, networking, and interactive runtimes.</p>
+          <p class="role-line">AI backends / Unity interaction / C++ systems / Haptics &amp; XR</p>
+          <p class="hero-summary">AI 백엔드와 Unity 인터랙션부터 센싱, 신호 처리, 네이티브 엔진까지 실제로 동작하는 시스템을 구현합니다.</p>
           <p class="hero-actions">
             <a class="primary-action" href="#work">View selected work</a>
             <a href="https://github.com/Rliop913" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -57,8 +57,8 @@
       <section class="cv-grid" id="profile" aria-label="이력 및 기술 역량 요약">
         <div class="cv-column profile-column">
           <h2><span>01A</span> 프로필</h2>
-          <p class="lead">신호 처리와 GPU 커널부터 네트워크, 센서, 인터랙티브 런타임까지 전체 경로를 아우르는 시스템을 만듭니다.</p>
-          <p>저수준 C++ 시스템 구현과 연구 프로토타이핑을 함께 수행합니다. 현재는 독립형 혼합현실 환경에서 햅틱 텍스처를 취득하고, 모델링하고, 재현하는 워크플로를 연구하고 있습니다.</p>
+          <p class="lead">C++ 시스템, AI 백엔드, 센서 기반 Unity 콘텐츠를 연결하는 개발과 연구를 수행합니다.</p>
+          <p>Amazon EC2 g5.xlarge에서 VR 대화 시스템의 백엔드를 구축하고, Unity에서는 LiDAR SDK를 활용한 다면 프로젝션 방탈출 콘텐츠의 인터랙션·게임 로직·오브젝트·애니메이션을 구현했습니다. 저수준 C++ 시스템 구현과 연구 프로토타이핑을 함께 수행합니다. 현재는 독립형 혼합현실 환경에서 햅틱 텍스처를 취득하고, 모델링하고, 재현하는 워크플로를 연구하고 있습니다.</p>
           <div class="subsection">
             <h3>학력</h3>
             <article class="compact-entry">
@@ -75,28 +75,39 @@
         </div>
 
         <div class="cv-column experience-column">
-          <h2><span>01B</span> 경력</h2>
+          <h2><span>01B</span> 경력 및 프로젝트</h2>
+          <article class="cv-entry">
+            <span class="entry-kind">프로젝트</span>
+            <div><p class="entry-kind">AI 백엔드 / 클라우드</p><h3><a href="#greatman">Greatman · AI 백엔드 개발</a></h3><p>VR 역사 인물 대화 시스템</p><small>AI·서버 전체, Amazon EC2 g5.xlarge, 클라이언트 통신, 로깅, 사용자 실험 보조</small></div>
+          </article>
+          <article class="cv-entry">
+            <span class="entry-kind">프로젝트</span>
+            <div><p class="entry-kind">Unity / 실감형 콘텐츠</p><h3><a href="#cave">CAVE 방탈출 · Unity 개발</a></h3><p>LiDAR 벽면 터치 기반 다면 프로젝션 게임</p><small>LiDAR SDK 활용, CAVE 인터랙션, 게임 로직, 오브젝트, 애니메이션</small></div>
+          </article>
           <article class="cv-entry">
             <time>2025—현재</time>
-            <div><p class="entry-kind">연구</p><h3>석사 연구원 · Haptics / XR</h3><p>경희대학교 Haptics Lab</p><small>Meta Quest 3, OpenXR, 1 kHz 센싱, AR/LSF 모델링, 진동 촉각 PCM 렌더링</small></div>
+            <div><p class="entry-kind">연구</p><h3><a href="#haptics">석사 연구원 · Haptics / XR</a></h3><p>경희대학교 Haptics Lab</p><small>Meta Quest 3, OpenXR, 1 kHz 센싱, AR/LSF 모델링, 진동 촉각 PCM 렌더링</small></div>
           </article>
           <article class="cv-entry">
             <time>2022—현재</time>
-            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3>Project DJ Engine · 단독 개발</h3><p>크로스플랫폼 C++20 오디오·리듬 게임 미들웨어</p><small>아키텍처, DSP 런타임, IPC, GPU 통합, Godot GDExtension, CI/CD</small></div>
+            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3><a href="#pdje">Project DJ Engine · 단독 개발</a></h3><p>크로스플랫폼 C++20 오디오·리듬 게임 미들웨어</p><small>아키텍처, DSP 런타임, IPC, GPU 통합, Godot GDExtension, CI/CD</small></div>
           </article>
           <article class="cv-entry">
             <time>2023—2024</time>
-            <div><p class="entry-kind">연구</p><h3>학부 연구원 · CVLab</h3><p>호서대학교</p><small>C++ 컴퓨터 비전 연구 프로토타입 및 실험용 소프트웨어 개발</small></div>
+            <div><p class="entry-kind">연구</p><h3>학부 연구원 · CVLab</h3><p>호서대학교</p><small>C++ / OpenCV 얼굴 정렬·전처리, TensorRT 추론, CUDA 비동기 처리</small></div>
           </article>
           <article class="cv-entry">
             <time>2023—2024</time>
-            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3>OCCAstft · GPGPU / DSP 개발</h3><p>이기종 실행 환경을 지원하는 단시간 푸리에 변환 시스템</p><small>OKL 커널, 네 가지 실행 환경, 비동기 IPC, NVIDIA H100 프로파일링</small></div>
+            <div><p class="entry-kind">개인 개발 / 오픈소스</p><h3><a href="#occastft">OCCAstft · GPGPU / DSP 개발</a></h3><p>이기종 실행 환경을 지원하는 단시간 푸리에 변환 시스템</p><small>OKL 커널, 네 가지 실행 환경, 비동기 IPC, NVIDIA H100 프로파일링</small></div>
           </article>
         </div>
 
         <aside class="cv-column capability-column">
           <h2><span>01C</span> 기술 역량</h2>
           <dl class="capability-list">
+            <div><dt>AI / 클라우드</dt><dd>Python, 음성 인식·검색·LLM·음성 합성 연동, AWS, HTTP 통신, 대화 로깅</dd></div>
+            <div><dt>Unity / 공간</dt><dd>다면 프로젝션 CAVE, LiDAR SDK 활용, 인터랙션, 게임 로직, 오브젝트, 애니메이션</dd></div>
+            <div><dt>컴퓨터비전</dt><dd>OpenCV, TensorRT, 얼굴 정렬, 추론 전처리, CUDA 스트림</dd></div>
             <div><dt>시스템</dt><dd>C++20, 멀티스레딩, 실시간 시스템 설계, Windows, Linux, macOS</dd></div>
             <div><dt>신호 처리</dt><dd>FFT, STFT, AR, LSF, 필터링, 실시간 PCM 합성</dd></div>
             <div><dt>병렬 연산</dt><dd>CUDA, OpenCL, OCCA / OKL, OpenMP, 이기종 실행 환경</dd></div>
@@ -110,8 +121,9 @@
       <section class="credentials" id="research" aria-labelledby="research-heading">
         <header><p>02 / Research & contributions</p><h2 id="research-heading">Evidence</h2></header>
         <div class="credential-list">
+          <article><time>2026</time><p>Publication / VR &amp; AI</p><h3><a href="https://doi.org/10.3390/app162110707" target="_blank" rel="noreferrer">Design and Field Validation of a VR-Based RAG Historical NPC: Knowledge Grounding and Persona Grounding Can Fail Independently ↗</a></h3><span>Yunjin Kim, Jiho Kim, Gwuidong Ryu, Tack Woo · Applied Sciences 16(21), 10707 · 2026-10-29</span></article>
           <article><time>Merged</time><p>Open source / C++</p><h3><a href="https://github.com/facebook/rocksdb/commit/6ae1cb8837022ef84f3993633791a4a54b18393d" target="_blank" rel="noreferrer">RocksDB C++20 atomic shared-pointer compatibility ↗</a></h3><span>Upstream commit 6ae1cb8 · original pull request #13744</span></article>
-          <article><time>2026</time><p>Publication / Haptics</p><h3>An End-to-End MR Workflow for Haptic Texture Acquisition, Modeling, and Rendering</h3><span>Jiho Kim, Mudassir Ibrahim Awan, Ahsan Raza, and SeokHee Jeon · AsiaHaptics 2026 · forthcoming</span></article>
+          <article><time>2026</time><p>Publication / Haptics</p><h3><a href="#haptics">An End-to-End MR Workflow for Haptic Texture Acquisition, Modeling, and Rendering</a></h3><span>Jiho Kim, Mudassir Ibrahim Awan, Ahsan Raza, and SeokHee Jeon · AsiaHaptics 2026 · forthcoming</span></article>
           <article><time>Published</time><p>Publication / GPGPU DSP</p><h3><a href="http://apjcriweb.org/content/vol11no2/40.html" target="_blank" rel="noreferrer">Related OCCAstft Research ↗</a></h3><span>Asia-Pacific Journal of Convergent Research Interchange · linked from the project record</span></article>
           <article><time>Merged</time><p>Open source / Integration</p><h3><a href="https://github.com/hi-godot/godot-ai/pull/870" target="_blank" rel="noreferrer">Godot AI · Pi Coding Agent client ↗</a></h3><span>19 files · 2,126 additions · configuration, rollback protection, documentation, and regression tests</span></article>
         </div>
@@ -120,17 +132,81 @@
       <section class="work-index" id="work" aria-labelledby="work-heading">
         <header class="section-label">
           <p>03 / Selected work</p>
-          <h2 id="work-heading">Three systems, documented as engineering records.</h2>
+          <h2 id="work-heading">AI, interactive spaces, and systems engineering.</h2>
           <ol>
+            <li><a href="#greatman">Greatman <span>AI backend / AWS</span></a></li>
+            <li><a href="#cave">CAVE Escape Room <span>Unity / LiDAR SDK</span></a></li>
             <li><a href="#pdje">Project DJ Engine <span>2022—Present</span></a></li>
             <li><a href="#haptics">MR Haptic Texture Workflow <span>2025—Present</span></a></li>
             <li><a href="#occastft">OCCAstft <span>2023—2024</span></a></li>
           </ol>
         </header>
 
-        <article class="record" id="pdje">
+        <article class="record" id="greatman">
           <header class="record-head">
             <p class="record-no">03.1</p>
+            <div><p class="record-domain">AI 백엔드 / 클라우드 / VR 연동</p><h3>Greatman · VR 역사 인물 AI 대화 시스템</h3></div>
+            <dl><div><dt>역할</dt><dd>AI 백엔드 전체 개발</dd></div><div><dt>인프라</dt><dd>Amazon EC2 g5.xlarge</dd></div><div><dt>논문</dt><dd>Applied Sciences · 2026</dd></div></dl>
+          </header>
+          <div class="record-body">
+            <div class="record-summary">
+              <p>Unity VR 환경에서 사용자가 역사 인물 NPC와 음성으로 대화하는 연구 시스템입니다. 서버와 AI 구성 전반, 클라우드 배포·운영을 담당했습니다.</p>
+              <dl class="story-grid">
+                <div><dt>담당 업무</dt><dd>음성 인식부터 응답 생성과 음성 합성까지 처리하는 서버를 AWS에 배포했습니다. Unity 클라이언트와의 HTTP 통신과 대화 로깅을 구현하고 사용자 실험을 보조했습니다.</dd></div>
+                <div><dt>사용자 실험</dt><dd>국제 참가자 42명이 126회 세션에 참여했습니다. 연구팀은 이 중 39명의 세션 기록 104건을 복원해 분석했습니다.</dd></div>
+              </dl>
+              <ul class="evidence">
+                <li><b>서버</b><span>Python · Amazon EC2 g5.xlarge · HTTP 클라이언트 통신 · 대화 로그</span></li>
+                <li><b>AI 구성</b><span>음성 인식 → 검색·문맥 구성 → LLM 생성 → 음성·텍스트 응답</span></li>
+                <li><b>연구</b><span>반복 응답·사실 오류·세션 및 로깅 한계를 다룬 공동저자 논문 게재</span></li>
+              </ul>
+              <p class="record-links"><a href="https://doi.org/10.3390/app162110707" target="_blank" rel="noreferrer">논문 ↗</a><a href="https://www.mdpi.com/2076-3417/16/21/10707" target="_blank" rel="noreferrer">논문 및 보충자료 ↗</a></p>
+            </div>
+            <div class="method-sheet" role="region" aria-label="Greatman 서버와 클라이언트 역할">
+              <p class="sheet-title">서비스 흐름 / 담당 경계</p>
+              <ol>
+                <li><span>01</span><div><b>Unity VR 클라이언트</b><p>다른 팀원 담당 · Meta Quest 3 · 음성 입력 및 응답 표시</p></div></li>
+                <li><span>02</span><div><b>통신 및 세션 처리</b><p>본인 담당 · 클라이언트와 서버 간 통신</p></div></li>
+                <li><span>03</span><div><b>AI 백엔드</b><p>본인 담당 · 음성 인식·검색·LLM·음성 합성 구성</p></div></li>
+                <li><span>04</span><div><b>운영 및 기록</b><p>본인 담당 · Amazon EC2 g5.xlarge · 대화 로깅 · 실험 보조</p></div></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="record" id="cave">
+          <header class="record-head">
+            <p class="record-no">03.2</p>
+            <div><p class="record-domain">Unity / 다면 프로젝션 / 센서 SDK 연동</p><h3>CAVE 방탈출</h3></div>
+            <dl><div><dt>역할</dt><dd>Unity 콘텐츠 개발</dd></div><div><dt>공간</dt><dd>다면 프로젝션 CAVE</dd></div><div><dt>입력</dt><dd>LiDAR 벽면 터치</dd></div></dl>
+          </header>
+          <div class="record-body">
+            <div class="record-summary">
+              <p>다면 프로젝션 공간에서 LiDAR로 벽면 터치를 판별하고, 이를 Unity 콘텐츠와 연결하는 방탈출 게임입니다.</p>
+              <dl class="story-grid">
+                <div><dt>담당 업무</dt><dd>CAVE 인터랙션, 방탈출 게임 로직, 게임 내 오브젝트 및 애니메이션을 담당했습니다.</dd></div>
+                <div><dt>센서 연동 방식</dt><dd>LiDAR SDK가 감지한 벽면 터치를 Unity에 전달해 게임 오브젝트와 애니메이션을 제어했습니다.</dd></div>
+              </dl>
+              <ul class="evidence">
+                <li><b>환경</b><span>Unity · 다면 프로젝션 공간 · LiDAR SDK</span></li>
+                <li><b>담당</b><span>인터랙션 · 게임 로직 · 오브젝트 · 애니메이션</span></li>
+              </ul>
+            </div>
+            <div class="method-sheet" role="region" aria-label="CAVE 벽면 터치 입력 흐름">
+              <p class="sheet-title">입력에서 콘텐츠 반응까지</p>
+              <ol>
+                <li><span>01</span><div><b>벽면 터치</b><p>다면 프로젝션 공간의 사용자 입력</p></div></li>
+                <li><span>02</span><div><b>LiDAR SDK</b><p>센서 데이터 처리 및 터치 판별에 SDK 활용</p></div></li>
+                <li><span>03</span><div><b>Unity 인터랙션</b><p>CAVE 상호작용 및 게임 로직 구현</p></div></li>
+                <li><span>04</span><div><b>콘텐츠 반응</b><p>오브젝트 및 애니메이션 구현</p></div></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="record" id="pdje">
+          <header class="record-head">
+            <p class="record-no">03.3</p>
             <div><p class="record-domain">시스템 / 오디오 / 미들웨어</p><h3>Project DJ Engine</h3></div>
             <dl><div><dt>역할</dt><dd>단독 개발</dd></div><div><dt>기간</dt><dd>2022년 6월—현재</dd></div><div><dt>지원 환경</dt><dd>Windows / Linux / macOS</dd></div></dl>
           </header>
@@ -139,7 +215,7 @@
               <p>리듬 게임, DJ 퍼포먼스, DAW형 음악 도구를 만드는 Godot 개발자를 위한 오픈소스 툴킷입니다.</p>
               <dl class="story-grid">
                 <div><dt>만든 이유</dt><dd>리듬 게임 개발자는 오디오 재생, 저지연 입력, 노트 판정, 저작 도구, 음악 분석 기능을 직접 조합하고 동기화해야 합니다. PDJE는 이 기반을 하나의 재사용 가능한 Godot 시스템으로 제공합니다.</dd></div>
-                <div><dt>직접 구현한 범위</dt><dd>전체 아키텍처부터 재생·편집 런타임, DSP 통합, 장치 입력, 리듬 게임 판정, IPC, 데이터 저장, 패키징, 자동 배포까지 설계하고 구현했습니다.</dd></div>
+                <div><dt>담당 업무</dt><dd>전체 아키텍처부터 재생·편집 런타임, DSP 통합, 장치 입력, 리듬 게임 판정, IPC, 데이터 저장, 패키징, 자동 배포까지 설계하고 구현했습니다.</dd></div>
                 <div><dt>만들 수 있는 것</dt><dd>동기화된 리듬 게임, 실시간 또는 사전 제작된 DJ 퍼포먼스, 게임 내 차트·믹스 편집기, 저지연 입력 시스템, 음악 검색과 파형 분석 도구를 개발할 수 있습니다.</dd></div>
               </dl>
               <ul class="evidence">
@@ -166,7 +242,7 @@
 
         <article class="record" id="haptics">
           <header class="record-head">
-            <p class="record-no">03.2</p>
+            <p class="record-no">03.4</p>
             <div><p class="record-domain">연구 시스템 / 햅틱 / XR</p><h3>End-to-End MR Haptic Texture Workflow</h3></div>
             <dl><div><dt>역할</dt><dd>석사 연구원</dd></div><div><dt>기간</dt><dd>2025년 3월—현재</dd></div><div><dt>발표</dt><dd>AsiaHaptics 2026</dd></div></dl>
           </header>
@@ -176,7 +252,7 @@
               <dl class="story-grid">
                 <div><dt>해결하려는 문제</dt><dd>무선 센서와 헤드셋 런타임 사이에서 텍스처 취득, 온라인 모델 생성, 분석, 진동 촉각 재생이 하나의 일관된 흐름으로 동작해야 합니다.</dd></div>
                 <div><dt>구현</dt><dd>ESP32 시계 정렬, 네이티브 C/C++ 모델링, 공간 보간, Godot 통합, OpenXR 부동소수점 PCM을 하나의 연구 시스템으로 결합했습니다.</dd></div>
-                <div><dt>공개 근거 범위</dt><dd>AsiaHaptics 2026 시연을 목표로 개발 중인 프로토타입이며, 공식 공개 저장소와 출판 페이지는 아직 제공되지 않습니다.</dd></div>
+                <div><dt>개발 현황</dt><dd>AsiaHaptics 2026 시연을 준비하고 있습니다.</dd></div>
               </dl>
               <ul class="evidence">
                 <li><b>프로토타입</b><span>$26.27 센서 부착물 · MPU6050 + QA6P FSR + ESP32</span></li>
@@ -199,7 +275,7 @@
 
         <article class="record" id="occastft">
           <header class="record-head">
-            <p class="record-no">03.3</p>
+            <p class="record-no">03.5</p>
             <div><p class="record-domain">병렬 연산 / 신호 처리</p><h3>OCCAstft</h3></div>
             <dl><div><dt>역할</dt><dd>GPGPU / DSP 개발</dd></div><div><dt>기간</dt><dd>2023—2024</dd></div><div><dt>프로파일링 환경</dt><dd>NVIDIA H100</dd></div></dl>
           </header>
@@ -209,7 +285,7 @@
               <dl class="story-grid">
                 <div><dt>해결하려는 문제</dt><dd>대용량 신호를 처리하는 호출 코드가 특정 GPU API, CPU 백엔드, 전송 방식에 종속되지 않으면서도 여러 실행 환경을 사용할 수 있어야 합니다.</dd></div>
                 <div><dt>설계 결정</dt><dd>공통 요청 규약이 CUDA, OpenCL, OpenMP, 서버, Serial 실행 환경을 선택하고, OKL 커널이 Stockham FFT 파이프라인을 구현하도록 구성했습니다.</dd></div>
-                <div><dt>공개 근거 범위</dt><dd>H100에서 15개 윈도 크기를 측정한 원본 JSON, 통합 CSV 생성 과정, 크기별 프로파일링 결과를 저장소에 보존하고 있습니다.</dd></div>
+                <div><dt>벤치마크</dt><dd>NVIDIA H100에서 윈도 크기 15종을 테스트했습니다. 저장소에 크기별 측정 결과와 CSV 생성 스크립트를 공개했습니다.</dd></div>
               </dl>
               <ul class="evidence">
                 <li><b>실행 환경</b><span>CUDA → OpenCL → OpenMP → 서버 → Serial 순서의 대체 실행</span></li>

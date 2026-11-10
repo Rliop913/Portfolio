@@ -7,11 +7,11 @@ Jiho Kim
 
 .. raw:: html
 
-   <p class="portfolio-statement">I build systems across the full path: signal-processing models, GPU kernels, networking, sensors, and interactive runtimes.</p>
+   <p class="portfolio-statement">I build systems across the full path: signal-processing models, GPU kernels, networking, sensors, AI backends, and interactive runtimes.</p>
 
 **Current:** M.S. Researcher, Kyung Hee University Haptics Lab
 
-**Focus:** C++ Systems · Audio/DSP · GPGPU · Haptics/XR
+**Focus:** AI Backends · Unity Interaction · C++ Systems · Audio/DSP · GPGPU · Haptics/XR
 
 **Contact:** `rrop@khu.ac.kr <mailto:rrop@khu.ac.kr>`_ · `GitHub <https://github.com/Rliop913>`_
 
@@ -41,6 +41,15 @@ At A Glance
 Selected Systems
 ----------------
 
+:doc:`Greatman <projects/greatman>`
+   Complete AI backend, Amazon EC2 g5.xlarge deployment, VR client
+   communication and dialogue logging, with assistance in user experiments.
+   The Unity VR client was developed by another team member.
+
+:doc:`CAVE Escape Room <projects/cave-escape>`
+   Unity interactions, game logic, objects and animations in a
+   multi-projection space using LiDAR SDK-based wall-touch input.
+
 :doc:`Project DJ Engine <projects/project-dj-engine>`
    **Lead engineering system.** A complete foundation for rhythm games and DJ
    applications: audio playback, editing, input, timing judgment, analysis,
@@ -54,13 +63,7 @@ Selected Systems
    A supporting GPGPU/DSP research system spanning CUDA, OpenCL, OpenMP,
    Serial, and asynchronous proxy/runner transport.
 
-The three systems above remain the primary portfolio entries. Smaller tools,
-upstream contributions, and implementation studies are collected separately
-under :doc:`Supporting Work <supporting-work>`.
-
-.. raw:: html
-
-   <p class="build-note">Built with Sphinx — because this portfolio is documentation of engineering work.</p>
+See :doc:`Supporting Work <supporting-work>` for tools and open-source contributions.
 
 .. toctree::
    :maxdepth: 2

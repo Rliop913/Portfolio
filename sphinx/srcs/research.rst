@@ -1,6 +1,19 @@
 Research
 ========
 
+VR Historical NPC Publication
+-----------------------------
+
+**Design and Field Validation of a VR-Based RAG Historical NPC: Knowledge
+Grounding and Persona Grounding Can Fail Independently**
+
+Yunjin Kim, Jiho Kim, Gwuidong Ryu, and Tack Woo.
+*Applied Sciences* 16(21), 10707. Published 29 October 2026.
+
+`DOI: 10.3390/app162110707 <https://doi.org/10.3390/app162110707>`_
+
+My implementation contribution is recorded in :doc:`Greatman <projects/greatman>`.
+
 Haptics Publication
 -------------------
 

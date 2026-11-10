@@ -67,9 +67,3 @@ Research Evidence
 ``An End-to-End MR Workflow for Haptic Texture Acquisition, Modeling, and
 Rendering`` — Jiho Kim, Mudassir Ibrahim Awan, Ahsan Raza, and SeokHee Jeon,
 AsiaHaptics 2026.
-
-Project Link
-------------
-
-No public repository or publication page is linked yet. This page remains the
-portfolio entry point until a canonical public artifact is available.

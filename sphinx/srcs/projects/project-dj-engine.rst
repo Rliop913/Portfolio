@@ -130,24 +130,17 @@ returns file and symbol evidence, and exposes both a Discord command surface
 and a Continue-compatible MCP server.
 
 The low-latency input path is also backed by focused platform studies for
-Windows RawInput, Linux libevdev/epoll, and MIDI through libremidi. These remain
-implementation evidence for the Input Engine rather than separate headline
-projects.
+Windows RawInput, Linux libevdev/epoll, and MIDI through libremidi.
 
 Current Development
 -------------------
 
 ``Project-DJ-DAW`` is the application layer currently being built on top of
 the engine. Its active work includes project selection, music-asset metadata,
-BPM mapping, waveform/STFT inspection, and mixset-editing workspaces. It is
-listed here as ongoing work until its public usage contract and documentation
-are complete.
+BPM mapping, waveform/STFT inspection, and mixset-editing workspaces.
 
 Source & Project Links
 ----------------------
-
-The links below lead to the original project only after the portfolio record
-above has established its scope and implementation boundaries.
 
 - `Documentation <https://rliop913.github.io/Project-DJ-Engine-Docs/>`_
 - `Documentation source and harness <https://github.com/Rliop913/Project-DJ-Engine-Docs>`_

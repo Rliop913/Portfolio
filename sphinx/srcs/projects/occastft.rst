@@ -47,16 +47,10 @@ Profiling Evidence
 - HIP and Metal are scaffolded but not implemented
 
 The repository preserves the raw JSON results, merged CSV generation route,
-and per-window profiling artifacts. The portfolio intentionally records the
-test boundary without turning plot shapes into unsupported performance claims;
-comparative speedups will be stated only when a reviewed result table is
-available.
+and per-window profiling artifacts.
 
 Source & Project Links
 ----------------------
-
-The links below lead to the original implementation and related publication
-after the portfolio summary above.
 
 - `Repository <https://github.com/Rliop913/OCCAstft>`_
 - `Related APJCRI paper <http://apjcriweb.org/content/vol11no2/40.html>`_

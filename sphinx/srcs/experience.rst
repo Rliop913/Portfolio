@@ -1,6 +1,26 @@
 Experience
 ==========
 
+Greatman - AI Backend Developer
+------------------------------------------------------------
+
+- Owned the server and AI backend configuration for a VR historical NPC.
+- Deployed and operated the backend on Amazon EC2 g5.xlarge.
+- Implemented VR client communication and dialogue logging; assisted with
+  user experiments.
+- Collaborated with a separate Unity VR client developer.
+
+See :doc:`Greatman <projects/greatman>` for the project and publication.
+
+CAVE Escape Room - Unity Developer
+------------------------------------------------------------
+
+- Implemented CAVE interactions, game logic, game objects and animations.
+- Used a LiDAR SDK to process sensor data and integrated wall-touch input
+  into a multi-projection Unity escape-room experience.
+
+See :doc:`CAVE Escape Room <projects/cave-escape>` for the implementation scope.
+
 M.S. Researcher — Haptics / XR
 ------------------------------
 

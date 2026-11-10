@@ -9,6 +9,10 @@ DSP models, move workloads onto GPUs, connect sensors over constrained
 networks, and deliver the result inside an interactive runtime. I work across
 the complete path instead of isolating algorithms from deployment.
 
+My work also includes the complete AI backend for a VR historical NPC on
+Amazon EC2 g5.xlarge, and Unity interactions, game logic, objects and
+animations for a LiDAR SDK-driven multi-projection CAVE escape room.
+
 Current Appointment
 -------------------
 
@@ -28,6 +32,12 @@ Technical Scope
 
    * - Area
      - Working set
+   * - AI and cloud
+     - Python, speech/LLM/retrieval integration, Amazon EC2 g5.xlarge, dialogue logging
+   * - Unity interaction
+     - CAVE, multi-projection spaces, LiDAR SDK integration, game logic, objects, animation
+   * - Computer vision
+     - OpenCV, TensorRT, face alignment, inference preprocessing, CUDA streams
    * - Systems
      - C++20, multithreading, soft real-time design, Windows, Linux, macOS
    * - Signal processing

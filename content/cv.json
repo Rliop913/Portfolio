@@ -1,0 +1,110 @@
+{
+  "name": "JIHO KIM",
+  "headline": "C++ SYSTEMS / AI BACKENDS / UNITY INTERACTION / HAPTICS & XR",
+  "email": "rrop@khu.ac.kr",
+  "links": [
+    {"label": "Portfolio", "url": "https://rliop913.github.io/Portfolio/"},
+    {"label": "GitHub", "url": "https://github.com/Rliop913"}
+  ],
+  "pages": [
+    {
+      "sections": [
+        {
+          "title": "PROFESSIONAL SUMMARY",
+          "paragraphs": [
+            "Systems-focused developer working across C++ middleware, AI backends, Unity interactions, and haptics/XR research. Built and operated the complete AI backend for a VR historical NPC on Amazon EC2 g5.xlarge, including client communication and logging. Implemented Unity game logic, interactions, objects, and animations for a LiDAR SDK-driven multi-projection CAVE escape room. Since June 2022, independently developing cross-platform C++20 audio middleware and native Godot integrations. Currently researching sensor-to-rendering MR haptic workflows at Kyung Hee University."
+          ]
+        },
+        {
+          "title": "TECHNICAL SCOPE",
+          "items": [
+            {"title": "AI / Cloud", "text": "Python, speech recognition, LLM integration, RAG pipeline configuration, speech synthesis, AWS, HTTP client-server communication, dialogue logging"},
+            {"title": "Interactive / XR", "text": "Unity, CAVE interactions, LiDAR SDK integration, game logic, objects and animations; Godot 4 / GDExtension, OpenXR, Meta Quest 3, vibrotactile haptics"},
+            {"title": "Systems / DSP", "text": "C++20, MSVC, Clang, CMake, Conan, CI/CD; FFT/STFT, Faust, miniaudio, OCCA/OKL, CUDA, OpenCL, OpenMP"},
+            {"title": "Data / Transport", "text": "Cap'n Proto, CBOR, SQLite, RocksDB, TCP, UDP, WebSocket, shared-memory IPC; Windows, Linux, macOS"}
+          ]
+        },
+        {
+          "title": "SELECTED AI & INTERACTIVE PROJECTS",
+          "items": [
+            {
+              "title": "Greatman - VR Historical NPC",
+              "subtitle": "AI Backend Developer / AWS Deployment",
+              "bullets": [
+                "Owned the full server and AI backend configuration, connecting speech recognition, retrieval, LLM response generation, and speech synthesis.",
+                "Deployed and operated the backend on Amazon EC2 g5.xlarge; implemented VR client communication and dialogue logging; assisted with user experiments.",
+                "Collaborated with a separate Unity VR client developer. Project-level field use: 42 participants and 126 sessions; related coauthor paper published in Applied Sciences (2026)."
+              ]
+            },
+            {
+              "title": "CAVE Escape Room",
+              "subtitle": "Unity Interaction / Game Logic / Objects / Animation",
+              "bullets": [
+                "Implemented interactions, game logic, game objects, and animations for an escape-room experience in a multi-projection CAVE space.",
+                "Used a LiDAR SDK for data processing and integrated wall-touch input into Unity content and game behavior."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sections": [
+        {
+          "title": "RESEARCH & SYSTEMS EXPERIENCE",
+          "items": [
+            {
+              "title": "M.S. Researcher - Haptics / XR",
+              "subtitle": "Haptics Lab, Kyung Hee University | Mar 2025 - Present",
+              "bullets": [
+                "Developing an end-to-end Meta Quest 3 workflow for haptic texture acquisition, modeling, and vibrotactile rendering.",
+                "Implemented 1 kHz acceleration/force sensing, AR/LSF models and interpolation, native C/C++ Godot integration, and OpenXR floating-point haptic PCM."
+              ]
+            },
+            {
+              "title": "Project DJ Engine - Solo Open-Source Developer",
+              "subtitle": "Cross-Platform C++20 Audio Middleware | Jun 2022 - Present",
+              "bullets": [
+                "Designed playback, editing, DSP, device input, rhythm-game judgment, IPC and persistence across core, Godot wrapper and prebuilt distribution repositories.",
+                "Maintained CMake/Conan builds and CI/CD delivery for Windows, Linux and macOS, including prebuilt Godot GDExtension packages."
+              ]
+            },
+            {
+              "title": "Undergraduate Researcher - CVLab",
+              "subtitle": "Hoseo University | Mar 2023 - Dec 2024",
+              "bullets": [
+                "Implemented C++/OpenCV landmark-based face alignment and inference preprocessing; worked with TensorRT enqueueV3, pinned host memory and CUDA stream synchronization."
+              ]
+            },
+            {
+              "title": "OCCAstft - GPGPU / DSP Developer",
+              "subtitle": "Independent Open-Source Project | Jul 2023 - Oct 2024",
+              "bullets": [
+                "Implemented portable FFT/STFT kernels using OCCA/OKL with CUDA and OpenCL execution paths, asynchronous transport and runtime fallback; profiled on NVIDIA H100."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "EDUCATION",
+          "items": [
+            {"title": "Kyung Hee University", "text": "M.S. in Computer Engineering | Mar 2025 - Present"},
+            {"title": "Hoseo University", "text": "B.S. in Computer Engineering | Mar 2021 - Feb 2025"}
+          ]
+        },
+        {
+          "title": "PUBLICATIONS & CONTRIBUTIONS",
+          "items": [
+            {
+              "title": "VR Historical NPC - Applied Sciences (2026)",
+              "text": "Y. Kim, J. Kim, G. Ryu, T. Woo. Design and Field Validation of a VR-Based RAG Historical NPC: Knowledge Grounding and Persona Grounding Can Fail Independently. 16(21), 10707.",
+              "link": {"label": "doi:10.3390/app162110707", "url": "https://doi.org/10.3390/app162110707"}
+            },
+            {"title": "Haptics / GPGPU Research", "text": "End-to-End MR haptic texture workflow, AsiaHaptics 2026 (forthcoming); related OCCAstft research published in APJCRI."},
+            {"title": "Open-Source Contributions", "text": "Merged C++ compatibility fix in Meta's RocksDB; Godot AI Pi Coding Agent client integration."}
+          ]
+        }
+      ]
+    }
+  ]
+}
